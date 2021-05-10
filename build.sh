@@ -15,6 +15,17 @@ cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j
 
+cd ../../Pangolin
+
+echo "Configuring and building Thirdparty/Pangolin ..."
+
+git checkout v0.6
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make -j
+
+
 cd ../../../
 
 echo "Uncompress vocabulary ..."
